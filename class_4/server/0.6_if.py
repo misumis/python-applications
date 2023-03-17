@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-f = open('products.json')
+f = open(r'/Users/michal/projects/python-applications/class_4/server/products.json')
 
 products = json.load(f)
 
