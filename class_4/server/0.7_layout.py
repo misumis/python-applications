@@ -11,11 +11,11 @@ products = json.load(f)
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('home_layout.html', title="Home")
   
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about_layout.html', title="About")
 
 @app.route('/products')
 def get_products():

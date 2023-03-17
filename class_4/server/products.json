@@ -5,7 +5,8 @@
     "discountPrice": 599.0,
     "stock": 10,
     "description": "The iPhone 11 is the latest iPhone from Apple. It features a 6.1-inch Liquid Retina display, an A13 Bionic chip, and a dual-camera system with a 12MP Ultra Wide and Wide cameras.",
-    "image": "https://www.vedion.pl/pol_pl_Apple-iPhone-11-White-64GB-Smartfon-Stan-Dobry-15884_1.jpg"
+    "image": "https://www.vedion.pl/pol_pl_Apple-iPhone-11-White-64GB-Smartfon-Stan-Dobry-15884_1.jpg",
+    "colors": ["white", "black", "green", "yellow"]
   },
   {
     "name": "iPhone 11 Pro",
@@ -13,7 +14,8 @@
     "discountPrice": null,
     "stock": 5,
     "description": "The iPhone 11 Pro is the latest iPhone from Apple. It features a 5.8-inch Super Retina XDR display, an A13 Bionic chip, and a triple-camera system with a 12MP Ultra Wide, Wide, and Telephoto cameras.",
-    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWYK2_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1566854964644"
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWYK2_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1566854964644",
+    "colors": ["red", "black", "blue", "yellow"]
   },
   {
     "name": "iPhone 11 Pro Max",
@@ -21,7 +23,8 @@
     "discountPrice": null,
     "stock": 0,
     "description": "The iPhone 11 Pro Max is the latest iPhone from Apple. It features a 6.5-inch Super Retina XDR display, an A13 Bionic chip, and a triple-camera system with a 12MP Ultra Wide, Wide, and Telephoto cameras.",
-    "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-11-Pro_Colors_091019_big.jpg.large.jpg"
+    "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-11-Pro_Colors_091019_big.jpg.large.jpg",
+    "colors": null
   },
   {
     "name": "iPhone SE",
@@ -29,7 +32,8 @@
     "discountPrice": null,
     "stock": 10,
     "description": "The iPhone SE is the latest iPhone from Apple. It features a 4.7-inch Retina HD display, an A13 Bionic chip, and a single-camera system with a 12MP Wide camera.",
-    "image": "https://v.wpimg.pl/ZGYyODMudSY4Gzl3Yg54M3tDbS0kV3ZlLFt1ZmIWdXZrQX88Yhh0LDYUIDYmGjcmNxAuaj0ZdS4pESAqKFgpInRLf3Z9WGh0PUkrc35GP3NoSSsif01paTMJKGYw"
+    "image": "https://v.wpimg.pl/ZGYyODMudSY4Gzl3Yg54M3tDbS0kV3ZlLFt1ZmIWdXZrQX88Yhh0LDYUIDYmGjcmNxAuaj0ZdS4pESAqKFgpInRLf3Z9WGh0PUkrc35GP3NoSSsif01paTMJKGYw",
+    "colors": null
   },
   {
     "name": "iPhone XR",
@@ -37,6 +41,7 @@
     "discountPrice": null,
     "stock": 10,
     "description": "The iPhone XR is the latest iPhone from Apple. It features a 6.1-inch Liquid Retina display, an A12 Bionic chip, and a single-camera system with a 12MP Wide camera.",
-    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MRW62?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1569617849402"
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MRW62?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1569617849402",
+    "colors": null
   }
 ]

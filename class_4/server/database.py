@@ -1,11 +1,12 @@
 from flask import Flask, render_template, flash, redirect, url_for
 from forms import RegistrationForm, LoginForm
 from flask_sqlalchemy import SQLAlchemy
-import os 
+
 app = Flask(__name__)
 
 # set absolute path to database
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///site.db'
+app.config['SECRET_KEY'] = 'c8373a6359f14746476e30d48336514b'
 
 db = SQLAlchemy(app)
 
@@ -46,11 +47,15 @@ def get_products():
     products = Product.query.all()
     return render_template('products_layout.html', products=products, title='All Products')
 
+@app.route('/products/<id>')
+def get_product(id):
+  product = Product.query.get(id)
+  return render_template('pdp.html', product=product)
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
   form = RegistrationForm()
   if form.validate_on_submit():
-    
     try:
       user = User(username=form.username.data, email=form.email.data, password=form.password.data)
       db.session.add(user)
@@ -63,9 +68,12 @@ def register():
     return redirect(url_for('home'))
   return render_template('register.html', title='Register', form=form)
   
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
   form = LoginForm()
+  if (form.email.data == "test@test.com" and form.password.data == "test"):
+    flash(f'You have been logged in!', 'green')
+    return redirect(url_for('home'))
   return render_template('login.html', title='Login', form=form)
 
 if __name__ == '__main__':  
