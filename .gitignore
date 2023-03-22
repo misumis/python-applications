@@ -130,3 +130,5 @@ dmypy.json
 sendgrid.env
 .DS_Store
 chromedriver
+stable-diffusion-webui
+models
