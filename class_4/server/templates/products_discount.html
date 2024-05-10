@@ -20,11 +20,6 @@
         {% endif %}
 
         <p>Stock: {{ product.stock }}</p>
-        {% if product.colors %}
-          {% for color in product.colors %}
-            <div style=" border: 1px solid black; width: 20px; height: 20px; display: inline-block; background: {{ color }}"></div>
-          {% endfor %}
-        {% endif %}
 
         <a href="/products/{{ product.id }}" class="font-medium text-sky-500">Read More</a>
       </div>
