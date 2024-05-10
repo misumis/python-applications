@@ -22,7 +22,6 @@ class Product(db.Model):
   def __repr__(self) -> str: 
       return f"Product('{self.id}', '{self.name}', '{self.discountPrice}', '{self.price}', '{self.stock}', '{self.description}', '{self.image}')";
   
-  
 class User(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   username = db.Column(db.String(20), unique=True, nullable=False)
@@ -46,11 +45,6 @@ def about():
 def get_products():
     products = Product.query.all()
     return render_template('products_layout.html', products=products, title='All Products')
-
-@app.route('/products/<id>')
-def get_product(id):
-  product = Product.query.get(id)
-  return render_template('pdp.html', product=product)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
