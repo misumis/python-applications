@@ -17,6 +17,10 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/product_check')
+def get_product_check():
+    return products
+
 @app.route('/products')
 def get_products():
     return render_template('products.html', products=products)

@@ -11,7 +11,6 @@
     {% for product in products %}
       <div class="bg-slate-100 rounded-xl p-8">
         <h2 class="font-bold">{{ product.name }}</h2>
-
         {% if product.discountPrice %}
         <p style="text-decoration: line-through">Price: {{ product.price }}$</p>
         <p style="color: red">New Price: {{ product.discountPrice }}$</p>
@@ -20,6 +19,15 @@
         {% endif %}
 
         <p>Stock: {{ product.stock }}</p>
+
+        {% if product.colors %}
+          <p>Colors:</p>
+          <div>
+            {% for color in product.colors %}
+              <div style="display: inline-block;width: 30px; height: 30px; background: {{color}}; border: 1px solid black; border-radius: 50%;"></div>
+            {% endfor %}
+          </div>
+        {% endif %}
 
         <a href="/products/{{ product.id }}" class="font-medium text-sky-500">Read More</a>
       </div>

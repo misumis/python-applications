@@ -70,17 +70,21 @@ def login():
 
 @app.route('/api/product/<int:id>', methods=['GET'])
 def get_api_product(id):
-    product = Product.query.get_or_404(id)
-    # return JSON object
-    return jsonify({
-        'id': product.id,
-        'name': product.name,
-        'discountPrice': product.discountPrice,
-        'price': product.price,
-        'stock': product.stock,
-        'description': product.description,
-        'image': product.image
-    })
+    product = Product.query.get(id)
+    print(product)
+    if (product):
+      # return JSON object
+      return jsonify({
+          'id': product.id,
+          'name': product.name,
+          'discountPrice': product.discountPrice,
+          'price': product.price,
+          'stock': product.stock,
+          'description': product.description,
+          'image': product.image
+      })
+    else:
+      return jsonify({'message': 'Product not found!'}), 404
 
 @app.route('/search', methods=['GET'])
 def search():

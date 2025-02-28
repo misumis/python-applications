@@ -8,6 +8,7 @@ f = open('products.json')
  
 products = json.load(f)
 
+
 @app.route('/')
 @app.route('/home')
 def home():

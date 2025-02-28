@@ -6,14 +6,18 @@
   </head>
   <body>
     <h1>All Products Page</h1>
-    {% for product in products %}
-    <div>
-      <h2>{{ product.name }}</h2>
-      <p>Price: {{ product.price }}$</p>
-      <caption>{{ product.description }}</caption>
-      <p>Stock: {{ product.stock }}</p>
-      <a href="/products/{{ product.id }}">Read More</a>
-    </div>
-    {% endfor %}
+    <ul>
+      {% for product in products %}
+      <li>
+        <div>
+          <h2>{{ product.name }}</h2>
+          <p>Price: {{ product.price }}$</p>
+          <caption>{{ product.description }}</caption>
+          <p>Stock: {{ product.stock }}</p>
+          <a href="/products/{{ product.id }}">Read More</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
   </body>
 </html>

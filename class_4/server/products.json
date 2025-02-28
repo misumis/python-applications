@@ -15,7 +15,7 @@
     "stock": 5,
     "description": "The iPhone 11 Pro is the latest iPhone from Apple. It features a 5.8-inch Super Retina XDR display, an A13 Bionic chip, and a triple-camera system with a 12MP Ultra Wide, Wide, and Telephoto cameras.",
     "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWYK2_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1566854964644",
-    "colors": ["red", "black", "blue", "yellow"]
+    "colors": ["red", "black", "blue", "yellow", "#449988"]
   },
   {
     "name": "iPhone 11 Pro Max",
